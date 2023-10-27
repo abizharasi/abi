@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tittle>Your Name - portfolio</tittle>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /*Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /*Add styles for the round profile picture */
+        .profile-picture { 
+            width:100px; /*Adjust the size as needed */
+            height:100px;
+            border-radius:75%; /*create a ciecular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /*Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav u1 {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav u1 li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav u1 li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .downlode-button{
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: aqua;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        u1 {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!--Add your profile picture here-->
+            <img src="profile/abizharasiparamasivam.jpg" alt="your profile picture" class="profile-picture">
+            <h1>abizharasiparamasivam</h1>
+            <p>A student</p>
+        </div>
+    </header>
+    
+    <nav>
+        <u1>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </u1>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello Everyone! this is abizharasiparamasivam and i am a computer science student.welcome to my webpage
+        </div>
+    </section>
+
+    <selection id="education">
+        <div class="section-content">
+            <h2>B.S.C,</h2>
+            <p>Computer science-BSC</p>
+        </div>
+    </selection>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>skills</h2>
+            <u1>
+                <li>Tally</li>
+                <li>DCA</li>
+                <li>Type writting</li>
+                <li>trailoring</li>
+                <li>Spoken English</li> 
+            </u1>
+        </div>
+
+    </section>
+
+    <section id="Projects">
+        <div class="section-content">
+            <h2>projects</h2>
+            <u1>
+                <li><a href="http://www.quicky.liveblog365.com/home/">projects 1</a></li> 
+                <li><a href="http://www.quicky.liveblog365.com/about/">projects 2</a></li>
+                <li><a href="http://www.quicky.liveblog365.com/porfolio/">projects 3</a></li>
+
+                <!--Add more project links here-->
+            </u1>
+        </div>
+    </section>
+
+    <section id="resume">
+        <centre>
+            <div class="section-content">
+                <h2>Resume</h2>
+                <a href="https://resume.io/r/46xpixBlr" class="downlode-button">Downlode Cv</a>
+            </div>
+            </centre>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 abizharasiparamasivam</p>
+    </footer>
+
+    <script>
+        // smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^=#]').forEach(anchor=> {
+            anchor.addEventLiatener('click',function(e) {
+                e.preventDefault();
+
+                const targetId= this.getAttribute('href').substring(1);
+                const targetElement= document.getElementById(targrtId);
+
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetelement.offsettop,
+                        behavior: 'smooth'
+
+                    });
+                }
+            });
+        });
+        </script>
+            </body>
+</html>    
+        
